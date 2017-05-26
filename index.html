@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>KSHP</title>
+        <script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+
         <style>
             .t{
             background-color: #18171B;
@@ -484,16 +486,23 @@
             
             
     
+        
         </style>
+
+        
+       
+
+
+        
     </head>
     <body bgcolor="#18171B">
     <header><
         <section class="tis">
-            <h4 class="nave ix">HOME</h4>
-            <h4 class="nave1 ix">ABOUT</h4>
-            <h4 class="nave1 ix">CLASSES</h4>
-            <h4 class="nave1 ix">EVENTS</h4>
-            <h4 class="nave1 ix">CONTACTS</h4>
+        <a href="#1"><h4 class="nave ix">HOME</h4></a>
+        <a href="#5"><h4 class="nave1 ix">ABOUT</h4></a>
+        <a href="#2"><h4 class="nave1 ix">CLASSES</h4></a>
+        <a href="#3"><h4 class="nave1 ix">EVENTS</h4></a>
+        <a href="#4"><h4 class="nave1 ix">CONTACTS</h4></a>
             <h1 class="v1">WE UNITE<br>PEAPLE WITH<br>COMMON<br>INTEREST</h1>
             <div class="ipp">
             <h6 class="ippo">LEARN MORE</h6>
@@ -503,7 +512,7 @@
     <main>
         <section class="t-sec">
       <div class="ib left">
-          <h2 class="wel">WELCOME</h2>
+          <h2 id="1" class="wel">WELCOME</h2>
           <h3 class="te">HIP HOP IS AN ENERGETIC<br>FORM OF DANCING</h3>
           <p class="te1">Hip Hop developed from several culturies,including Jazz,Rock,Tap,American and Latino Culturies.Hip hop is unique in that it allows its dncers to perform with freedom of movement,adding in their own personalities. </p>
       </div><div class="ib rig">
@@ -513,7 +522,7 @@
       </div>
         </section>
         
-        <h1 class="s6">HIP HOP CLASSES</h1>
+        <h1 id="2" class="s6">HIP HOP CLASSES</h1>
         <section class="z1">
             <section class="z2 ix"><div class="x6"><h2 class="x4">Disc Joyleys-Trials of Life</h2><h3 class="te">LIP GLOSS</h3><p class="tev">Tweetie taechers the popular hip hop dance,"Walk It Out"</p>
             </div><div class="x2"></div>
@@ -526,7 +535,7 @@
                 <div class="l2"><h2 class="x4">Learn how to dance step Walk It Out</h2><h3 class="te">WALK IT OUT</h3><p class="tev">Learn how do the cabbage patch dance.Step right and shift weight</p>
                 </div><div class="l3">
                 </div>
-        <h1 class="s6">EVENTS</h1>
+        <h1 id="3" class="s6">EVENTS</h1>
         <section class="t">
             <div class="s1">
             </div><div class="s2">
@@ -538,7 +547,7 @@
             </div><div class="s4"><p class="s9">History of<br>breakdancing</p>
             </div>
         </section>
-                <h1 class="s6">WHAT PEAPLE SAY</h1>
+                <h1 id="5" class="s6">WHAT PEAPLE SAY</h1>
                 <section class="o3">
                     <section class="o4 ix">
                         <div class="k1">
@@ -602,7 +611,7 @@
             EVENTS<br>
             CONTACTS<br>
         </p>
-        <p class="m2  ">
+        <p id="4" class="m2  ">
             <a href="https://twitter.com">TWITTER<br></a>
             <a href="https://www.facebook.com">FACEBOOK<br></a>
             <a href="https://www.instagram.com">INSTAGRAMM<br></a>
@@ -629,7 +638,14 @@
         
         </section>
     </footer>
-    </body>
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #18171B url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;background-size:129px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1500);};</script>
+
+
+
+
+   </body>
 </html>
 
 
