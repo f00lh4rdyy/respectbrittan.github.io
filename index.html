@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylename.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+$(function(){
+$('a[href^="#"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+return false; 
+}); 
+});
+</script>
+</head>
+<body>
+<header class="header">
+   <section class="header-nav">
+        <a href="#1" class="header-text">Главная</a>
+        <a href="#2" class="header-text">О нас</a>
+        <div class="header-logo"></div>
+        <a href="#3" class="header-text">Залы</a>
+        <a href="#4" class="header-text">Контакты</a>
+    </section>
+</header>
+<main>
+<section id="1" class="main-block">
+   <hr class="hr-main">
+   <h1 class="title-main1">ИНТЕРНЕТ-КАФЕ</h1>
+   <h1 class="title-main2">SONDEX</h1>
+   <hr class="hr-main1">
+</section>
+<section id="2" class="block-icons">
+   <section class="block-icons1">
+        <section class="icon1">
+            <span class="text-icon1">Доступно</span>
+            <div class="icon-i1"></div>
+        </section>
+        <section class="icon2">
+            <span class="text-icon1">Уникально</span>
+            <div class="icon-i2"></div>
+        </section>
+        <section class="icon3">
+            <span class="text-icon1">Как дома</span>
+            <div class="icon-i3"></div>
+        </section>
+    </section>
+</section>
+<section id="3" class="rooms">
+    <section class="rooms1">
+        <h1 class="room-title">Залы</h1>
+    </section>
+    <section class="rooms2">
+        <section class="room-box1">
+            <h4 class="room1-text">Игровой зал</h4>
+            <div class="room1">
+                <span class="room-font">В игровом зале вы можете полностью погрузиться в игру.В зале присутствуют игровые компьютеры и косоли, поэтому всегда будет во что поиграть.</span>
+            </div>
+        </section>
+        <section class="room-box2">
+            <h4 class="room2-text">Рабочий зал</h4>
+            <div class="room2">
+                <span class="room-font">Рабочий зал это лучшее место чтобы работать без лишних шумов и в прекрасной обстановке.Зал оснащен лучшим оборудованием для работы любой сложности.</span>
+            </div>
+        </section>
+        <section class="room-box3">
+            <h4 class="room3-text">Кафе-бар</h4>
+            <div class="room3">
+                <span class="room-font">В нашем кафе вы можете приобрести прекрасные пончики, пирожные и кексы.Из напитков можем предложить чай и кофе.</span>
+            </div>
+        </section>
+    </section>
+</section>
+</main>
+<footer id="4" class="footer">
+    <section class="foot1">
+        <section class="foot1-title">
+            <span class="footer-title">Контакты</span>
+        </section>
+        <section class="foot1-foot">
+            <section class="foot1-foot-main">
+                <section class="foot-block1">
+                    <span class="block-text">Телефон: +7 (999)-99-99</span>
+                    <span class="block-text">Адрес: Улица Горького, Дом 5А</span>
+                </section>
+                <hr class="footer-hr">
+                <section class="foot-block2">
+                    <span class="block-text">Email: <em>sondexcafe@mail.ru</em></span>
+                    <span class="block-text">Twitter: @sondexcafe</span>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="foot2">
+        <span class="foot2-text">@2017 <i>SONDEX</i> All Rights Reserved</span>
+    </section>
+</footer>
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2C3E50 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:119px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1500);};</script>
+</body>
+</html>
